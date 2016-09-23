@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS10_1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-carousel.css">
+  <link rel="stylesheet" href="css/style-checkbox.css">
+  <link rel="stylesheet" href="css/style-checkbox-css.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/jquery.selectbox.css" />
+
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="js/jquery.jcarousel.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+  <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>jQuery carousel & select</h1>
+    <p>HOMEWORK</p>
+  </header>
+
+  <main>
+   <section class="carousel-line">
+    <div class="stage-wrapper clearfix">
+      <div class="stage">
+        <div class="stage-container">
+          <div class="jcarousel-wrapper">
+            <div class="jcarousel" data-jcarousel="true">
+              <ul class="clearfix">
+                <li><img src="img/img1.JPG"></li>
+                <li><img src="img/img2.JPG"></li>
+                <li><img src="img/img3.JPG"></li>
+                <li><img src="img/img4.JPG"></li>
+                <li><img src="img/img5.JPG"></li>
+              </ul>
+            </div>
+
+            <a href="" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
+            <a href="" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+
+            <p class="jcarousel-pagination" data-jcarouselpagination="true">
+              <a href="#1" class="active">1</a>
+              <a href="#2">2</a>
+              <a href="#3">3</a>
+              <a href="#4">4</a>
+              <a href="#5">5</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="select-line">
+    <dt>Demonstration:</dt>
+    <dd id="demo-default-usage">
+      <div class="demoTarget">
+        <select id="default-usage-select">
+          <option value="--">Please select your favorite color</option>
+          <option value="01">Red</option>
+          <option value="02">Orange</option>
+          <option value="03">Yellow</option>
+          <option value="04">Green</option>
+          <option value="05">Blue</option>
+          <option value="06">Magenta</option>
+          <option value="07">Violet</option>
+          <option value="08">Ultra-violet</option>
+        </select>
+        <div class="clr"></div>
+      </div>
+    </dd>
+  </section>
+
+  <section class="check_line">
+    <div class="check_block">
+      <h2>Checkbox jQuery</h2>
+      <form action="#">
+
+        <div>
+          <label for="ch1">Choose 1</label>
+          <input type="checkbox" class="niceCheck" checked="true" id="ch1" tabindex="1"/>
+        </div>
+        <div>
+          <label for="ch2">Choose 2</label>
+          <input type="checkbox" class="niceCheck" id="ch2" tabindex="2" value="2"/>
+        </div>
+        <div>
+          <label for="ch3">Choose 3</label>
+          <input type="checkbox" class="niceCheck" id="ch3" tabindex="2" value="2"/>
+        </div>
+        <div>
+          <label for="ch4">Choose 4</label>
+          <input type="checkbox" class="niceCheck" id="ch4" checked="checked" disabled="disabled"/>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+
+  <section class="check_line_css">
+    <div class="check_block_css">
+      <h2>Checkbox CSS</h2>
+      <form action="#">
+        <div class="check_css">
+          <input type="checkbox" id="choose1"/>
+          <label for="choose1">Choose 1</label>
+        </div>
+        <div class="check_css">
+          <input type="checkbox" id="choose2"/>
+          <label for="choose2">Choose 2</label>
+        </div>
+        <div class="check_css">
+          <input type="checkbox" id="choose3"/>
+          <label for="choose3">Choose 3</label>
+        </div>
+        <div class="check_css">
+          <input type="checkbox" id="choose4"/>
+          <label for="choose4">Choose 4</label>
+        </div>
+        <div class="check_css">
+          <input type="checkbox" id="choose5"/>
+          <label for="choose5">Choose 5</label>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <h3>THE END</h3>
+</footer>
+<script>$("select").selectbox();</script>
+<script src="js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="js/jquery.ikSelect.js"></script>
+</body>
+</html>
